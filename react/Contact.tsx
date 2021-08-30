@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 import axios from 'axios'
+import { format } from 'date-fns'
 
 const Contact: StorefrontFunctionComponent = () => {
   const CSS_HANDLES = [
@@ -38,9 +39,7 @@ const Contact: StorefrontFunctionComponent = () => {
   }
 
   const today = new Date()
-  const hoje = `${today.getFullYear()}-${(today.getMonth() + 1)
-    .toString()
-    .padStart(2, '0')}-${today.getDate()}`
+  const hoje = format(today, 'yyyy/MM/dd')
 
   const data = {
     id: Date.now().toString(),
