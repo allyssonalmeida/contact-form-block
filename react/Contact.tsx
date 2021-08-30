@@ -82,7 +82,7 @@ const Contact: StorefrontFunctionComponent = () => {
         <input
           type="text"
           name="name"
-          placeholder="João da Silva"
+          placeholder="Nome Completo"
           required
           className={`${handles.input} mt2 pa2 input-reset ba br2 w-100 measure`}
           value={name}
@@ -99,7 +99,7 @@ const Contact: StorefrontFunctionComponent = () => {
         <input
           type="email"
           name="email"
-          placeholder="joaosilva@email.com"
+          placeholder="email@email.com"
           required
           className={`${handles.input} mt2 pa2 input-reset ba br2 w-100 measure`}
           value={email}
@@ -116,7 +116,7 @@ const Contact: StorefrontFunctionComponent = () => {
         <input
           type="phone"
           name="phone"
-          placeholder="(87) 988332211"
+          placeholder="(99) 99999-9999"
           className={`${handles.input} mt2 pa2 input-reset ba br2 w-100 measure`}
           value={phone}
           onChange={changePhone}
