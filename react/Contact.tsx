@@ -40,13 +40,13 @@ const Contact: StorefrontFunctionComponent = () => {
   const today = new Date()
   const hoje = `${today.getFullYear()}-${(today.getMonth() + 1)
     .toString()
-    .padStart(2)}-${today.getDate()}`
+    .padStart(2, '0')}-${today.getDate()}`
 
   const data = {
     id: Date.now().toString(),
     name,
     email,
-    phone,
+    telephone: phone,
     prospect_date: hoje,
   }
 
