@@ -113,7 +113,7 @@ const Contact: StorefrontFunctionComponent = () => {
           Telefone
         </label>
         <input
-          type="phone"
+          type="tel"
           name="phone"
           placeholder="(99) 99999-9999"
           className={`${handles.input} mt2 pa2 input-reset ba br2 w-100 measure`}
